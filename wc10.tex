@@ -55,14 +55,20 @@
   \]
   Argue whether the number of entries in $B$ is countable.
   
-    \begin{solution}
-    Each row of the matrix is a Fibonacci sequence, hence its number of terms is countable.
-If we consider each row to be a set, then the terms in the matrix is obtained through a union of the rows.
-There are countably many rows in the matrix (first row, second row, and so on).
-So the terms in the matrix are obtained as a countable union of countable sets.
-Using the result from the question above, this union produces a countable set.
-Therefore, the number of terms in the matrix is countable.
-    \end{solution}
+  \begin{solution}
+    We notice that the number of entries in $B$ does not depend on how each entry is computed.\\
+    Also, the number of entries in $B$ is the same as in $A$.\\
+    Each row in $A$ is a Fibonacci sequence with unique starting conditions.\\
+    Therefore, each row is $A$ has countably many terms.\\
+    Let us define a \textit{row-set} for each row, i.e. the set containing the terms of the row.\\
+    Each row-set is countable.\\
+    There are countably many rows and hence row-sets in $A$.\\
+    The total number of terms in $A$ can be seen as a union of the row-sets.\\
+    This is a countable union of countable sets.\\
+    From the previous question, the resulting set is countable.\\
+    Therefore, the number of terms in $A$ is countable.\\
+    Therefore, the number of terms in $B$ is countable.
+  \end{solution}
 
 \end{questions}
 

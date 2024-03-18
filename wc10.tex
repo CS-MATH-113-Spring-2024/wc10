@@ -4,6 +4,12 @@
 \usepackage[a4paper]{geometry}
 \usepackage{xcolor}
 
+\usepackage{draftwatermark}
+\SetWatermarkText{Sample Solution}
+\SetWatermarkScale{3}
+\SetWatermarkLightness{.95}
+\printanswers
+
 \newcommand\N{\ensuremath{\mathbb{N}}}
 \newcommand\union{\cup}
 \newcommand\interx{\cap}
@@ -50,7 +56,12 @@
   Argue whether the number of entries in $B$ is countable.
   
     \begin{solution}
-
+    Each row of the matrix is a Fibonacci sequence, hence its number of terms is countable.
+If we consider each row to be a set, then the terms in the matrix is obtained through a union of the rows.
+There are countably many rows in the matrix (first row, second row, and so on).
+So the terms in the matrix are obtained as a countable union of countable sets.
+Using the result from the question above, this union produces a countable set.
+Therefore, the number of terms in the matrix is countable.
     \end{solution}
 
 \end{questions}
